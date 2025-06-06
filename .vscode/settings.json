@@ -1,0 +1,16 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "askForPassword": true,
+            "driver": "PostgreSQL",
+            "name": "StacX",
+            "database": "postgres",
+            "username": "postgres"
+        }
+    ],
+    "json.schemas": [],
+    "json.validate.enable": false
+}
