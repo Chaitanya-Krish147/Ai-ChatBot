@@ -1,6 +1,6 @@
 # 🚀 AI ChatBot – StacXai
 
-An intelligent, interactive chat interface built with **Next.js**, powered by **OpenRouter's Mistral-7B-Instruct** model for real-time natural language conversations. Designed with a sleek UI and secure API integration, this app demonstrates scalable AI deployment in production-ready environments.
+An intelligent, interactive chat interface built with **Next.js**, powered by **OpenRouter's Mistral-7B-Instruct** model for real-time natural language conversations. Designed with a sleek UI and secure API integration, this app demonstrates scalable AI deployment in production-ready environments and deployed into netfiy.
 
 ---
 
@@ -37,18 +37,6 @@ An intelligent, interactive chat interface built with **Next.js**, powered by **
 - **Authentication**: Email/password (custom or Firebase/AuthJS)
 
 ---
-
-## 📂 Project Structure
-├── app/
-│   ├── page.tsx            # Main UI
-│   ├── api/
-│   │   └── chat/route.ts   # Chat endpoint
-│   │   └── health/route.ts # Health check
-├── components/             # Reusable UI elements
-├── lib/                    # API logic, OpenRouter client
-├── public/assets/          # Screenshots and static files
-├── .env.local              # Environment config
-
 
 🛠️ Getting Started
 1. Clone the Repository
@@ -129,7 +117,7 @@ Deploy seamlessly to Vercel with GitHub integration.
 
 Push your repo to GitHub
 
-Connect to Vercel
+Connect to Netify
 
 Set environment variables
 
@@ -142,8 +130,5 @@ OpenRouter API
 
 Mistral-7B-Instruct Model Info
 
-Vercel Deployment Guide
-
 👤 Author
-Chaitanya Krish
-GitHub: Chaitanya-Krish147
+Chaitanya Krishna
