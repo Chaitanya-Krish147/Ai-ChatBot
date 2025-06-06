@@ -51,7 +51,7 @@ bash
 Copy
 Edit
 npm install
-# or
+or
 yarn install
 
 3. Configure Environment Variables
