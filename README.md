@@ -1,37 +1,145 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+🚀 AI ChatBot – StacXai
+An intelligent, interactive chat interface built with Next.js, powered by OpenRouter's Mistral-7B-Instruct model for real-time natural language conversations. Designed with a sleek UI and secure API integration, this app demonstrates scalable AI deployment in production-ready environments.
 
-## Getting Started
+🖼️ UI Screenshots
+🔐 Sign In Page
 
-First, run the development server:
+💬 Chat Interface
 
-```bash
+📁 You can save these screenshots in your repo under public/assets/screenshots/ and update paths accordingly.
+
+⚙️ Features
+✨ Sleek, responsive UI with modern UX
+
+🔐 Secure user authentication
+
+🤖 Integrated Mistral-7B-Instruct model via OpenRouter
+
+🔄 Chat history & context-aware messaging
+
+🛡️ Secure API key management via environment variables
+
+🔍 Health check endpoint for API monitoring
+
+🔁 Real-time message handling with error feedback
+
+🧠 Tech Stack
+Frontend: Next.js 14 (App Router), TypeScript
+
+LLM API: OpenRouter
+
+Model Used: mistral-7b-instruct
+
+UI Framework: Tailwind CSS, Geist Font (via next/font)
+
+Authentication: Email/password (custom or Firebase/AuthJS)
+
+📂 Project Structure
+bash
+Copy
+Edit
+├── app/
+│   ├── page.tsx            # Main UI
+│   ├── api/
+│   │   └── chat/route.ts   # Chat endpoint
+│   │   └── health/route.ts # Health check
+├── components/             # Reusable UI elements
+├── lib/                    # API logic, OpenRouter client
+├── public/assets/          # Screenshots and static files
+├── .env.local              # Environment config
+🛠️ Getting Started
+1. Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/Chaitanya-Krish147/Ai-ChatBot.git
+cd Ai-ChatBot
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+# or
+yarn install
+3. Configure Environment Variables
+Create a .env.local file:
+
+env
+Copy
+Edit
+OPENROUTER_API_KEY=your_openrouter_api_key
+🔒 Never hard-code API keys in source files. Use .env.local.
+
+4. Run the App
+bash
+Copy
+Edit
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Visit http://localhost:3000 in your browser.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+📡 API Endpoints
+🔹 POST /api/chat
+Purpose: Handles LLM prompt completions
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Request Body:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+json
+Copy
+Edit
+{
+  "messages": [
+    { "role": "user", "content": "Hello!" }
+  ]
+}
+Response:
 
-## Learn More
+json
+Copy
+Edit
+{
+  "response": "Hi! How can I assist you today?"
+}
+🔹 GET /api/health
+Purpose: Basic API status check
 
-To learn more about Next.js, take a look at the following resources:
+Response:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+json
+Copy
+Edit
+{ "status": "ok" }
+🧑‍💻 LLM Integration Highlights
+✅ Integrated OpenRouter API with Mistral-7B-Instruct for advanced NLP
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+🔐 Managed API keys securely with .env and environment-based configs
 
-## Deploy on Vercel
+🔄 Designed chat completion handler with robust error feedback
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+🧪 Built /health endpoint for deployment health checks
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-"# Ai-ChatBot" 
+📊 Logged errors and responses for debugging and performance tracking
+
+🚀 Deployment
+Deploy seamlessly to Vercel with GitHub integration.
+
+Push your repo to GitHub
+
+Connect to Vercel
+
+Set environment variables
+
+Deploy 🚀
+
+📚 Learn More
+Next.js Documentation
+
+OpenRouter API
+
+Mistral-7B-Instruct Model Info
+
+Vercel Deployment Guide
+
+👤 Author
+Chaitanya Krish
+
+GitHub: Chaitanya-Krish147
