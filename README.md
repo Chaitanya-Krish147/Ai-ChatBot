@@ -1,43 +1,44 @@
-🚀 AI ChatBot – StacXai
-An intelligent, interactive chat interface built with Next.js, powered by OpenRouter's Mistral-7B-Instruct model for real-time natural language conversations. Designed with a sleek UI and secure API integration, this app demonstrates scalable AI deployment in production-ready environments.
+# 🚀 AI ChatBot – StacXai
 
-🖼️ UI Screenshots
-🔐 Sign In Page
+An intelligent, interactive chat interface built with **Next.js**, powered by **OpenRouter's Mistral-7B-Instruct** model for real-time natural language conversations. Designed with a sleek UI and secure API integration, this app demonstrates scalable AI deployment in production-ready environments.
 
-💬 Chat Interface
+---
 
-📁 You can save these screenshots in your repo under public/assets/screenshots/ and update paths accordingly.
+## 🖼️ UI Screenshots
 
-⚙️ Features
-✨ Sleek, responsive UI with modern UX
+### 🔐 Sign In Page
+![Sign In](./public/assets/screenshots/signin.png)
 
-🔐 Secure user authentication
+### 💬 Chat Interface
+![Chat UI](./public/assets/screenshots/chat-ui.png)
 
-🤖 Integrated Mistral-7B-Instruct model via OpenRouter
+> 📁 _You can save these screenshots in your repo under `public/assets/screenshots/` and update paths accordingly._
 
-🔄 Chat history & context-aware messaging
+---
 
-🛡️ Secure API key management via environment variables
+## ⚙️ Features
 
-🔍 Health check endpoint for API monitoring
+- ✨ Sleek, responsive UI with modern UX
+- 🔐 Secure user authentication
+- 🤖 Integrated **Mistral-7B-Instruct** model via OpenRouter
+- 🔄 Chat history & context-aware messaging
+- 🛡️ Secure API key management via environment variables
+- 🔍 Health check endpoint for API monitoring
+- 🔁 Real-time message handling with error feedback
 
-🔁 Real-time message handling with error feedback
+---
 
-🧠 Tech Stack
-Frontend: Next.js 14 (App Router), TypeScript
+## 🧠 Tech Stack
 
-LLM API: OpenRouter
+- **Frontend**: Next.js 14 (App Router), TypeScript
+- **LLM API**: [OpenRouter](https://openrouter.ai/)
+- **Model Used**: `mistral-7b-instruct`
+- **UI Framework**: Tailwind CSS, Geist Font (via `next/font`)
+- **Authentication**: Email/password (custom or Firebase/AuthJS)
 
-Model Used: mistral-7b-instruct
+---
 
-UI Framework: Tailwind CSS, Geist Font (via next/font)
-
-Authentication: Email/password (custom or Firebase/AuthJS)
-
-📂 Project Structure
-bash
-Copy
-Edit
+## 📂 Project Structure
 ├── app/
 │   ├── page.tsx            # Main UI
 │   ├── api/
@@ -47,6 +48,8 @@ Edit
 ├── lib/                    # API logic, OpenRouter client
 ├── public/assets/          # Screenshots and static files
 ├── .env.local              # Environment config
+
+
 🛠️ Getting Started
 1. Clone the Repository
 bash
@@ -54,6 +57,7 @@ Copy
 Edit
 git clone https://github.com/Chaitanya-Krish147/Ai-ChatBot.git
 cd Ai-ChatBot
+
 2. Install Dependencies
 bash
 Copy
@@ -61,6 +65,7 @@ Edit
 npm install
 # or
 yarn install
+
 3. Configure Environment Variables
 Create a .env.local file:
 
@@ -141,5 +146,4 @@ Vercel Deployment Guide
 
 👤 Author
 Chaitanya Krish
-
 GitHub: Chaitanya-Krish147
