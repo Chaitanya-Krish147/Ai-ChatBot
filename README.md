@@ -7,10 +7,10 @@ An intelligent, interactive chat interface built with **Next.js**, powered by **
 ## 🖼️ UI Screenshots
 
 ### 🔐 Sign In Page
-![Sign In](./public/assets/screenshots/signin.png)
+![Sign In](./public/signup.png)
 
 ### 💬 Chat Interface
-![Chat UI](./public/assets/screenshots/chat-ui.png)
+![Chat UI](./public/main.png)
 
 > 📁 _You can save these screenshots in your repo under `public/assets/screenshots/` and update paths accordingly._
 
